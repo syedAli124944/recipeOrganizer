@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* border-bottom: 2px solid #ccc; */
+
+}
+
+.header h1 {
+    font-size: 46px;
+}
+
+.chef {
+    height: 100px;
+}
+
+.recipe {
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 30px;
+}
+
+/* searches control */
+.controls {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.add-btn:hover {
+    background-color: #57ed77;
+    color: black;
+}
+
+#searchBox {
+    border-radius: 10px;
+    font-size: large;
+    width: 300px;
+    padding: 8px;
+}
+
+/* recipe collections */
+.recipe-collection {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: start; */
+    padding: 30px;
+    margin: 0 auto;
+    width: 200vh;
+    border: 2px solid #ccc;
+    height: 1200px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.recipe-collectionContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+/* recipe image */
+.card-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    padding: 20px;
+    width: 250px;
+    height: 500px;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    line-height: 20px;
+    transition: 0.3s ease-in;
+}
+
+.recipe-card:hover {
+    transition: 0.3s ease-out;
+    transform: scale(1.05);
+}
+
+.Rimage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.ingridients {
+    color: #57ed77;
+}
+
+.ingridients ul,
+h3 {
+    margin-top: 5px;
+}
+
+.price {
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* buttons  */
+.edit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.edit:hover {
+    background-color: #66b3ff;
+    color: black;
+}
+
+/* delete btn */
+.delete {
+    margin: 0 18px;
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 10px;
+    transition: 0.3s ease-in;
+}
+
+.delete:hover {
+    background-color: #ff6b81;
+    color: black;
+}
+
+
+/* form */
+.form {
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+#recipeForm {
+    margin-top: 40px;
+}
+
+.popup-content {
+    padding: 20px;
+    margin-top: 10px;
+    line-height: 10px;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.save-btn {
+    margin-top: 80px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.save-btn:hover {
+    background-color: #57ed77;
+    color: black;
+}
+
+
+/* popup */
+.popup {
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+/* footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 30px;
+    text-align: center;
+    height: 5%;
+}
+
+@media (max-width : 768px) {
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-btn,
+    #searchBox {
+        width: 90%;
+    }
+
+    .recipe-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .Rimage {
+        width: 100%;
+        height: auto;
+    }
+
+}
