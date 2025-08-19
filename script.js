@@ -9,7 +9,7 @@ const editIndexInput = document.getElementById("edit");
 
 // Open form
 function openForm(index = null) {
-  formPopup.style.display = "block";
+  document.getElementById("recipeFormPopup").style.display = "flex";
   formTitle.textContent = index !== null ? "Edit Recipe" : "Add Recipe";
 
   if (index !== null) {
@@ -32,7 +32,7 @@ function openForm(index = null) {
 
 // Close form
 function closeForm() {
-  formPopup.style.display = "none";
+  document.getElementById("recipeFormPopup").style.display = "none";
 }
 
 // Save recipe (add / edit)
