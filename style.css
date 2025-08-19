@@ -26,19 +26,14 @@
     text-align: center;
     letter-spacing: 1px;
     border-bottom: 2px solid #ccc;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 /* searches control */
-.controls {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px;
-}
 
 .controls {
-    margin-top: 20px;
+    margin-top: 50px;
+    /* margin-bottom: 30px; */
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -80,6 +75,7 @@
     max-width: 1200px;
     border: 2px solid #ccc;
     margin-bottom: 40px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -100,7 +96,6 @@
 
 
 .recipe-card {
-
     padding: 20px;
     width: 250px;
     height: 500px;
@@ -210,16 +205,17 @@ h3 {
     max-width: 90%;
     text-align: left;
     position: relative;
+    text-align: center;
 }
 
 .popup-content label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 10px 5px;
+    text-align: center;
 }
 
 .popup-overlay {
     display: none;
-    /* hidden by default */
     position: fixed;
     top: 0;
     left: 0;
